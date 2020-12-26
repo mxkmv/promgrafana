@@ -1,0 +1,5 @@
+./data
+./data/prometheus/
+./data/prometheus/config/
+./data/prometheus/data/
+./data/grafana/
