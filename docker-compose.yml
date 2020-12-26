@@ -39,11 +39,15 @@
   
   grafana:
     image: grafana/grafana:latest
-    user: "472:472"
+    user: "472"
     container_name: grafana
     restart: unless-stopped
     links:
       - prometheus:prometheus
+    expose:
+      - 3000      
+    ports: 
+      - 3000:3000    
     volumes:
       - ./data/grafana:/var/lib/grafana
     environment:
