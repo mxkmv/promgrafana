@@ -1,2 +1,2 @@
-./data/prometheus/data/
-./data/grafana/
+./prometheus/data/
+./grafana/

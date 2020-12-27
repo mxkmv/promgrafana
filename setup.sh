@@ -1,5 +1,5 @@
-mkdir ./data/prometheus/data/
-mkdir ./data/grafana/
-chown 472:472 -R ./data/grafana/
+mkdir ./prometheus/data/
+mkdir ./grafana/
+chown 472:472 -R ./grafana/
 docker-compose up -d
 
