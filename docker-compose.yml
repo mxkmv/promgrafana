@@ -9,7 +9,8 @@
      command:
        - '--config.file=/etc/prometheus/prometheus.yml'
        - '--storage.tsdb.path=/prometheus'
-         # - '-alertmanager.url=http://alertmanager:9093'
+         # - '--storage.tsdb.retention=200h'  
+         # - '--alertmanager.url=http://alertmanager:9093'
      expose:
        - 9090
      ports:
@@ -24,6 +25,8 @@
     restart: unless-stopped
     expose:
       - 9100
+    ports:
+      - 9100:9100      
 
   cadvisor:
     image: google/cadvisor:latest

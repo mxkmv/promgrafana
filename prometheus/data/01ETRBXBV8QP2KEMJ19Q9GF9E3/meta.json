@@ -1,0 +1,17 @@
+{
+	"ulid": "01ETRBXBV8QP2KEMJ19Q9GF9E3",
+	"minTime": 1609272000000,
+	"maxTime": 1609279200000,
+	"stats": {
+		"numSamples": 3287,
+		"numSeries": 2517,
+		"numChunks": 2517
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01ETRBXBV8QP2KEMJ19Q9GF9E3"
+		]
+	},
+	"version": 1
+}
