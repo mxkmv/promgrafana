@@ -9,7 +9,7 @@
      restart: unless-stopped
      volumes:
        -  /prometheus.yml:/etc/prometheus/
-       - ./prometheus_data:/prometheus
+       - ./prometheus:/prometheus
      command:
        - '--config.file=/etc/prometheus/prometheus.yml'
        - '--storage.tsdb.path=/prometheus'
@@ -56,11 +56,11 @@
     ports: 
       - 3000:3000    
     volumes:
-      - grafana_data:/var/lib/grafana
+      - grafana:/var/lib/grafana
     environment:
       - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
       - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}  
       - GF_USERS_ALLOW_SIGN_UP=false
  volumes:
-     prometheus_data: {}
-     grafana_data: {}
+     prometheus: {}
+     grafana: {}
