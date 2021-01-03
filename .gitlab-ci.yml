@@ -1,17 +1,11 @@
 image: docker:latest
 services:
    - docker:dind
-build_job:
+setup_job:
   script:
   - apk update && apk upgrade
   - apk add curl jq python3 python3-dev build-base libffi-dev libressl-dev gettext
   - curl -O https://bootstrap.pypa.io/get-pip.py
   - python3 get-pip.py
   - pip install docker-compose
-make_job:
-  script:
-  - mkdir ./prometheus/data/ && mkdir ./grafana/
-  - chown 472:472 -R ./grafana/
-run_job:
-  script:
   - docker-compose -f docker-compose.yml up -d
