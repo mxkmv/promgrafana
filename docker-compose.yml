@@ -13,8 +13,10 @@
      command:
        - '--config.file=/etc/prometheus/prometheus.yml'
        - '--storage.tsdb.path=/prometheus'
-       - '--storage.tsdb.retention.time=45d' # How long to retain samples in prometheus storage.
-       - '--web.enable-lifecycle' # Enable shutdown and reload via HTTP request.
+       - '--storage.tsdb.retention.time=45d'
+         # How long to retain samples in prometheus storage.
+       - '--web.enable-lifecycle'
+         # Enable shutdown and reload via HTTP request.
          # - '--alertmanager.url=http://alertmanager:9093'
      expose:
        - 9090

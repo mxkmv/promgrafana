@@ -10,9 +10,8 @@ For stop service you should use command "docker-compose stop"
 Grafana: http://ip_address:3000 <BR>
 Prometheus: http://ip_address:9090 <BR>
 <BR>
-Node-Exporter- Monitoring Linux host metrics <BR>
-CAdvisor- Monitoring metrics for the running Containers <BR>
-
+Node-Exporter- [ port:9100 ] Monitoring Linux host metrics <BR>
+CAdvisor- Monitoring metrics for the running Containers. <BR>
 
 
 
