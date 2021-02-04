@@ -14,6 +14,8 @@
        - '--config.file=/etc/prometheus/prometheus.yml'
        - '--storage.tsdb.path=/prometheus'
        - '--storage.tsdb.retention.time=45d'
+       - '--storage.tsdb.min-block-duration' 
+         #   How long in memory before send to disk. Default 2h  
          # - '--alertmanager.url=http://alertmanager:9093'
      expose:
        - 9090
