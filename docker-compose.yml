@@ -17,6 +17,7 @@
          # How long to retain samples in prometheus storage.
        - '--web.enable-lifecycle'
          # Enable shutdown and reload via HTTP request.
+       -  '--web.enable-admin-api'
          # - '--alertmanager.url=http://alertmanager:9093'
      expose:
        - 9090
