@@ -13,7 +13,7 @@ Read Makefile
 Grafana: http://ip_address:3000 <BR>
 Prometheus: http://ip_address:9090 <BR>
 <BR>
-Node-Exporter- [ port:9100 ] Monitoring Linux host metrics <BR>
+Node-Exporter- [ port:9100 ] Monitoring Linux host metrics. <BR>
 CAdvisor- Monitoring metrics for the running Containers. <BR>
 
 
