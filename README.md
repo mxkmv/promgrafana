@@ -8,8 +8,8 @@ docker-compose up -d - start stack <BR>
 docker-compose stop - stop stack <BR> <BR>
 For comfort use you should use command: <BR>
 docker-up - start stack <BR>
-docker-down stop stack  <BR>
-For another functions read Makefile
+docker-down - stop stack  <BR>
+For another functions read Makefile.
 <BR>
 <BR>
 Grafana: http://ip_address:3000 <BR>
