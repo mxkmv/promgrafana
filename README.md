@@ -7,9 +7,9 @@ For native start/stop actions you should use command: <BR>
 docker-compose up -d - start stack <BR> 
 docker-compose stop - stop stack <BR> <BR>
 For comfort use you should use command: <BR>
-docker-up - start stack <BR>
-docker-down - stop stack  <BR>
-For another functions read Makefile.
+make docker-up - start stack <BR>
+make docker-down - stop stack  <BR>
+For another functions read Makefile and run by analogy with the previous commands.
 <BR>
 <BR>
 Grafana: http://ip_address:3000 <BR>
