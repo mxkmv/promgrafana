@@ -3,11 +3,11 @@ Stack for monitoring in docker service <BR>
 For first run you should use this man: <BR> <BR>
 git clone https://github.com/mxkmv/promgrafana.git <BR>
 cd promgrafana/ <BR>
-For native start/stop actions you should use command:
-docker-compose up -d - start stack 
+For native start/stop actions you should use command: <BR>
+docker-compose up -d - start stack <BR> 
 docker-compose stop - stop stack <BR> <BR>
 For comfort use you should use command: <BR>
-docker-up - start stack
+docker-up - start stack <BR>
 docker-down stop stack  <BR>
 For another functions read Makefile
 <BR>
