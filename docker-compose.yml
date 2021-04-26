@@ -65,7 +65,7 @@
   
   grafana:
     image: grafana/grafana:latest
-    user: "472"
+    user: "root"
     container_name: grafana
     restart: unless-stopped
     links:
