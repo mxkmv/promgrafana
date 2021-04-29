@@ -4,7 +4,7 @@
 
   prometheus:
      image: prom/prometheus:latest
-     user: "root"
+     user: ${MONITOR}
      container_name: prometheus
      restart: unless-stopped
      volumes:
@@ -65,7 +65,7 @@
   
   grafana:
     image: grafana/grafana:latest
-    user: "root"
+    user: ${MONITOR}
     container_name: grafana
     restart: unless-stopped
     links:
@@ -86,11 +86,11 @@
   node-red:
     image: nodered/node-red
     container_name: node-red
-    user: "1000"
+    user: ${MONITOR}
     environment:
       - TZ=Europe/Moscow
     ports:
-      - "11880:1880"
+      - "1880:1880"
     volumes:
       - "./node-red:/data"
     networks:
