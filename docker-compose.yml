@@ -82,7 +82,23 @@
       - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
       - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}  
       - GF_USERS_ALLOW_SIGN_UP=false
-
+  
+  node-red:
+    image: nodered/node-red
+    container_name: node-red
+    user: "1000"
+    environment:
+      - TZ=Europe/Moscow
+    ports:
+      - "11880:1880"
+    volumes:
+      - "./node-red:/data"
+    networks:
+      - monitoring
+    restart: always
+    links:
+      - prometheus:prometheus
+  
  networks:
      monitoring:
        driver: bridge
@@ -90,3 +106,4 @@
  volumes:
      prometheus: {}
      grafana: {}
+     node-red: {}
